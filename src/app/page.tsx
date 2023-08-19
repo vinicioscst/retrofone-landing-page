@@ -2,26 +2,31 @@ import Header from "@/components/Header";
 import Image from "next/image";
 import TopDecoration from "../../public/top-decoration.svg";
 import BottomDecoration from "../../public/bottom-decoration.svg";
+import Container from "@/components/Container";
+import Banner from "@/components/Banner";
 
 export default function Home() {
   return (
     <>
-      <div className="min-h-screen relative">
+      <div className="relative">
         <div className="flex flex-col justify-center gap-[100px] pt-20 pb-32">
-          <div className="w-full max-w-[1100px] px-5 mx-auto">
+          <Container>
             <Header />
-          </div>
+          </Container>
+          <Container>
+            <Banner />
+          </Container>
         </div>
       </div>
       <Image
         src={TopDecoration}
         alt=""
-        className="scale-50 md:scale-100 absolute -top-14 -right-36 md:top-0 md:right-0 pointer-events-none -z-10"
+        className="hidden md:block absolute top-0 right-0 pointer-events-none -z-10"
       />
       <Image
         src={BottomDecoration}
         alt=""
-        className="scale-50 md:scale-100 absolute -bottom-32 -left-20 md:bottom-0 md:right-0 pointer-events-none -z-10"
+        className="hidden md:block absolute bottom-0 left-0 pointer-events-none -z-50"
       />
     </>
   );
