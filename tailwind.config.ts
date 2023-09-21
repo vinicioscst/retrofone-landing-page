@@ -13,11 +13,14 @@ const config: Config = {
         'formimg': "url('/form-img.jpg')"
       },
       colors: {
-        'vintage-wine': '#992800',
-        'vintage-orange': '#D34A24',
-        'vintage-yellow': '#FFAF00',
-        'vintage-green': '#3C7F72',
-      }
+        'vintage-wine': 'hsl(16, 100%, 30%)',
+        'vintage-orange': 'hsl(13, 71%, 48%)',
+        'vintage-yellow': 'hsl(41, 100%, 50%)',
+        'vintage-green': 'hsl(168, 36%, 37%)',
+      },
+      screens: {
+        'xm': '459px',
+      },
     },
   },
   plugins: [],
