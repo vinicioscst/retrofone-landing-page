@@ -56,16 +56,14 @@ export default function Form(props: FormProps) {
       </fieldset>
       <fieldset className="flex flex-col gap-2">
         <label htmlFor="eventdate" className={`${inter.className} text-neutral-900 text-sm uppercase font-bold`}>Data e hora do Evento</label>
-        <div className="w-full min-h-[55px]">
-          <input
-            className={`w-full bg-white border border-neutral-900 rounded-xl px-4 py-4 min-h-[55px] bg-transparent text-base text-neutral-900 placeholder:text-neutral-500 appearance-none`}
-            type="datetime-local"
-            name="EVENTDATE"
-            id="eventdate"
-            required
-            placeholder="Data e hora do evento"
-          />
-          </div>
+        <input
+          className={`w-full bg-white border border-neutral-900 rounded-xl px-4 py-4 min-h-[55px] bg-transparent text-base text-neutral-900 placeholder:text-neutral-500 appearance-none`}
+          type="datetime-local"
+          name="EVENTDATE"
+          id="eventdate"
+          required
+          placeholder="Data e hora do evento"
+        />
       </fieldset>
         <input className="absolute left-[-5000px]" aria-hidden="true"
           type="text"
