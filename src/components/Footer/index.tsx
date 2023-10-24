@@ -13,7 +13,7 @@ export default function Footer() {
         <div className="flex justify-between items-center py-11">
           <p className={`${spicyRice.className} text-[2rem] text-neutral-900 uppercase select-none`}>Retrofone</p>
           <div className="flex gap-2">
-            <Link href="https://www.instagram.com/retrofonepb/"><Image src={Instagram} alt="Instagram" className="w-8"/></Link>
+            <Link href="https://www.instagram.com/retrofone_oficial/"><Image src={Instagram} alt="Instagram" className="w-8"/></Link>
             {/* <Link href=""><Image src={Whatsapp} alt="Whatsapp" className="w-8"/></Link> */}
           </div>
         </div>
