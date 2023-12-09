@@ -34,10 +34,10 @@ export default function Contact() {
               <p
                 className={`${spicyRice.className} text-[2rem] text-center text-neutral-900 uppercase`}
               >
-                Por: R$789,90*
+                Por: R$945,00*
               </p>
               <p className={`${inter.className} text-neutral-900/80 text-xs text-center mt-3 font-bold`}>
-                *Oferta de Black Friday
+                *Pagamento à vista
               </p>
             </div>
           </div>
