@@ -12,7 +12,24 @@ export const metadata: Metadata = {
   title: "Retrofone",
   description:
     "A forma simples e autêntica de guardar as mensagens de seus convidados",
-  keywords: ["Casamento", "Audio Guest Book", "Audio Guestbook", "Livro de visitas", "Audio Guest Book casamento", "Audio Guestbook casamento", "festa", "festa casamento"]
+  keywords: [
+    "Casamento",
+    "Audio Guest Book",
+    "Audio Guestbook",
+    "Livro de visitas",
+    "Audio Guest Book casamento",
+    "Audio Guestbook casamento",
+    "festa",
+    "festa casamento",
+    "vou casar",
+    "casamento joão pessoa",
+    "audio guest book joão pessoa",
+    "retrofone",
+    "itens casamento",
+    "atrativos casamento",
+    "tendência casamento",
+    "tendência festa",
+  ],
 };
 
 export default function RootLayout({
