@@ -24,21 +24,42 @@ export default function Contact() {
             sucesso no seu evento!
           </p>
 
-          <div className="flex flex-wrap justify-center items-center bg-vintage-yellow px-8 py-4 rounded-lg border border-neutral-900">
-            <div className="flex flex-col items-center">
-              <p
-                className={`${spicyRice.className} text-xl text-center text-neutral-900/50 uppercase line-through`}
-              >
-                De: R$1050,00
-              </p>
-              <p
-                className={`${spicyRice.className} text-[2rem] text-center text-neutral-900 uppercase`}
-              >
-                Por: R$945,00*
-              </p>
-              <p className={`${inter.className} text-neutral-900/80 text-xs text-center mt-3 font-bold`}>
-                *Pagamento à vista
-              </p>
+          <div className="flex flex-wrap justify-center items-center bg-vintage-yellow py-3 px-3 rounded-lg border border-neutral-900">
+            <div className="flex flex-col divide-y divide divide-neutral-900">
+              <div className="flex flex-col justify-center flex-grow pb-3">
+                <p
+                  className={`${spicyRice.className} text-xl text-center text-neutral-900/50 uppercase line-through`}
+                >
+                  De: R$1050,00
+                </p>
+                <p
+                  className={`${spicyRice.className} text-3xl text-center text-neutral-900 uppercase`}
+                >
+                  Por: R$945,00*
+                </p>
+                <p
+                  className={`${inter.className} text-neutral-900/80 text-xs text-center mt-3 font-bold`}
+                >
+                  Aluguel do aparelho com estrutura completa
+                </p>
+                <p
+                  className={`${inter.className} text-neutral-900/80 text-xs text-center mt-3 font-bold`}
+                >
+                  * Pagamento à vista
+                </p>
+              </div>
+              <div className="flex flex-col justify-center flex-grow pt-3">
+                <p
+                  className={`${spicyRice.className} text-3xl text-center text-neutral-900 uppercase`}
+                >
+                  R$650,00
+                </p>
+                <p
+                  className={`${inter.className} text-neutral-900/80 text-xs text-center mt-3 font-bold`}
+                >
+                  Aluguel do aparelho
+                </p>
+              </div>
             </div>
           </div>
         </div>
