@@ -11,17 +11,21 @@
 }
 
 body {
-  background-color: #FFEFDB;
+  background-color: #ffefdb;
 }
 
 button {
   cursor: pointer;
 }
 
-input, textarea, select, fieldset {
+input,
+textarea,
+select,
+fieldset {
   outline: 0;
 }
 
-ul, ol{
+ul,
+ol {
   list-style: none;
 }
