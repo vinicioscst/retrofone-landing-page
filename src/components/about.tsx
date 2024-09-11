@@ -1,6 +1,6 @@
 import { inter, spicyRice } from '@/app/layout'
 import Image from 'next/image'
-import BrowserBttns from '../../../public/browser-bttns.svg'
+import BrowserBttns from '../../public/browser-bttns.svg'
 
 export function About() {
   return (

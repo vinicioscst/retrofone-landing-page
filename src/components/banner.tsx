@@ -1,6 +1,6 @@
 import { inter, spicyRice } from '@/app/layout'
 import Image from 'next/image'
-import BannerFlower from '../../../public/flower.svg'
+import BannerFlower from '../../public/flower.svg'
 import { MdKeyboardDoubleArrowDown } from 'react-icons/md'
 
 export default function Banner() {
