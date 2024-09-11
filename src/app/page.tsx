@@ -1,18 +1,18 @@
-import Header from "@/components/Header";
-import Image from "next/image";
-import TopDecoration from "../../public/top-decoration.svg";
-import Container from "@/components/Container";
-import Banner from "@/components/Banner";
-import About from "@/components/About";
-import CardsContainer from "@/components/CardsContainer";
-import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
+import Image from 'next/image'
+import TopDecoration from '../../public/top-decoration.svg'
+import Container from '@/components/container'
+import Header from '@/components/header'
+import Banner from '@/components/banner'
+import { About } from '@/components/about'
+import CardsContainer from '@/components/cards-container'
+import Contact from '@/components/contact'
+import Footer from '@/components/footer'
 
 export default function Home() {
   return (
     <>
-      <div className="relative">
-        <div className="flex flex-col justify-center gap-[120px] pt-20">
+      <div className='relative'>
+        <div className='flex flex-col justify-center gap-[120px] pt-20'>
           <Container>
             <Header />
           </Container>
@@ -33,9 +33,9 @@ export default function Home() {
       </div>
       <Image
         src={TopDecoration}
-        alt=""
-        className="hidden lg:block absolute top-0 right-0 pointer-events-none -z-10"
+        alt=''
+        className='hidden lg:block absolute top-0 right-0 pointer-events-none -z-10'
       />
     </>
-  );
+  )
 }
