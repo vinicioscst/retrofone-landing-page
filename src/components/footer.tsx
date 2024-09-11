@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import BottomDecoration from '../../public/bottom-decoration.svg'
 import Instagram from '../../public/instagram.svg'
-import Whatsapp from '../../public/whatsapp.svg'
 import { spicyRice } from '@/app/layout'
 import Container from './container'
 import Link from 'next/link'
@@ -24,7 +23,6 @@ export default function Footer() {
                 className='w-8'
               />
             </Link>
-            {/* <Link href=""><Image src={Whatsapp} alt="Whatsapp" className="w-8"/></Link> */}
           </div>
         </div>
       </Container>
