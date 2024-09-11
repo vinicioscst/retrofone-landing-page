@@ -45,7 +45,7 @@ export default function Contact() {
                 <p
                   className={`${inter.className} text-neutral-900/80 text-xs text-center mt-3 font-bold`}
                 >
-                  * Pagamento à vista
+                  * Pagamento facilitado
                 </p>
               </div>
               <div className='flex flex-col justify-center flex-grow pt-3'>
