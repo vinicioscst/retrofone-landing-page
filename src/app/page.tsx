@@ -12,25 +12,18 @@ export default function Home() {
   return (
     <>
       <div className='relative'>
-        <div className='flex flex-col justify-center gap-[120px] pt-20'>
-          <Container>
+        <Container>
+          <div className='flex flex-col justify-center gap-32 pt-20 pb-32'>
             <Header />
-          </Container>
-          <Container>
             <Banner />
-          </Container>
-          <Container>
             <About />
-          </Container>
-          <Container>
             <CardsContainer />
-          </Container>
-          <Container>
             <Contact />
-          </Container>
-          <Footer />
-        </div>
+          </div>
+        </Container>
+        <Footer />
       </div>
+
       <Image
         src={TopDecoration}
         alt=''
