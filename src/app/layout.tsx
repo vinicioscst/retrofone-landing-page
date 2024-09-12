@@ -43,11 +43,13 @@ export default function RootLayout({
       className='scroll-smooth'
       lang='pt-BR'
     >
-      <Toaster
-        richColors
-        position='top-right'
-      />
-      <body>{children}</body>
+      <body>
+        {children}
+        <Toaster
+          richColors
+          position='top-right'
+        />
+      </body>
     </html>
   )
 }
