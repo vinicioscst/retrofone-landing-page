@@ -25,19 +25,23 @@ export default function Form(props: FormProps) {
     const { name, email, whatsapp, place, date } = data
     const body = formatBody(name, email, whatsapp, place, date) as IBody
 
-    const responseStatus = await sendForm(body)
-    if (responseStatus !== 201) {
-      toast.error(`Ocorreu um erro!`, {
-        description:
-          'Não foi possível enviar sua consulta. Caso o erro persista, entre em contato conosco'
-      })
-    }
-    if (responseStatus === 201) {
-      reset()
-      toast.success(`Consulta enviada com sucesso, ${name}!`, {
-        description:
-          'Em breve entraremos em contato através do seu email ou Whatsapp para confirmar a disponibilidade e fechar a sua reserva'
-      })
+    try {
+      const responseStatus = await sendForm(body)
+      if (responseStatus !== 201) {
+        toast.error('Ocorreu um erro!', {
+          description:
+            'Não foi possível enviar sua consulta. Caso o erro persista, entre em contato conosco'
+        })
+      }
+      if (responseStatus === 201) {
+        reset()
+        toast.success(`Consulta enviada com sucesso, ${name}!`, {
+          description:
+            'Em breve entraremos em contato através do seu email ou Whatsapp para confirmar a disponibilidade e fechar a sua reserva'
+        })
+      }
+    } catch (error) {
+      toast.error('Ocorreu um erro inesperado!')
     }
   }
 
