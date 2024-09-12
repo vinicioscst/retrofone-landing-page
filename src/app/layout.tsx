@@ -1,6 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter, Spicy_Rice } from 'next/font/google'
+import { Toaster } from 'sonner'
 
 export const inter = Inter({
   subsets: ['latin'],
@@ -42,6 +43,10 @@ export default function RootLayout({
       className='scroll-smooth'
       lang='pt-BR'
     >
+      <Toaster
+        richColors
+        position='top-right'
+      />
       <body>{children}</body>
     </html>
   )
