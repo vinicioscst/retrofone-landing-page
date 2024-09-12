@@ -20,6 +20,10 @@ const config: Config = {
       },
       screens: {
         xm: '459px'
+      },
+      fontFamily: {
+        inter: ['var(--font-inter)'],
+        spicy: ['var(--font-spicy)']
       }
     }
   },

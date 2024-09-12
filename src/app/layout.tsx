@@ -3,11 +3,16 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter, Spicy_Rice } from 'next/font/google'
 
-export const inter = Inter({
+const inter = Inter({
   subsets: ['latin'],
-  weight: ['400', '700', '900']
+  weight: ['400', '700', '900'],
+  variable: '--font-inter'
 })
-export const spicyRice = Spicy_Rice({ subsets: ['latin'], weight: '400' })
+const spicyRice = Spicy_Rice({
+  subsets: ['latin'],
+  weight: '400',
+  variable: '--font-spicy'
+})
 
 export const metadata: Metadata = {
   title: 'Retrofone',
@@ -40,7 +45,7 @@ export default function RootLayout({
 }) {
   return (
     <html
-      className='scroll-smooth'
+      className={`scroll-smooth ${inter.variable} ${spicyRice.variable}`}
       lang='pt-BR'
     >
       <body>

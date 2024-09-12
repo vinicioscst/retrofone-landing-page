@@ -1,4 +1,3 @@
-import { inter, spicyRice } from '@/app/layout'
 import Image from 'next/image'
 import BannerFlower from '../../public/flower.svg'
 import { MdKeyboardDoubleArrowDown } from 'react-icons/md'
@@ -12,21 +11,15 @@ export default function Banner() {
           alt=''
           draggable='false'
         />
-        <h1
-          className={`${spicyRice.className} text-center lg:text-left text-7xl text-vintage-green max-w-[400px] uppercase`}
-        >
+        <h1 className='font-spicy text-center lg:text-left text-7xl text-vintage-green max-w-[400px] uppercase'>
           Eternize a voz de quem você ama
         </h1>
-        <p
-          className={`${inter.className} text-center lg:text-left text-2xl text-neutral-900`}
-        >
+        <p className='font-inter text-center lg:text-left text-2xl text-neutral-900'>
           A forma simples e autêntica de guardar as mensagens de seus
           convidados.
         </p>
         <a href='#about'>
-          <button
-            className={`${inter.className} text-neutral-900 text-xl font-black uppercase bg-vintage-yellow px-12 py-4 rounded-full border border-neutral-900 hover:text-neutral-900/80 transition-colors animate-bounce`}
-          >
+          <button className='font-inter text-neutral-900 text-xl font-black uppercase bg-vintage-yellow px-12 py-4 rounded-full border border-neutral-900 hover:text-neutral-900/80 transition-colors animate-bounce'>
             <MdKeyboardDoubleArrowDown />
           </button>
         </a>

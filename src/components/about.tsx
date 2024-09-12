@@ -1,16 +1,13 @@
-import { inter, spicyRice } from '@/app/layout'
 import Image from 'next/image'
 import BrowserBttns from '../../public/browser-bttns.svg'
 
-export function About() {
+export default function About() {
   return (
     <section
       id='about'
       className='w-full flex items-center flex-col gap-6'
     >
-      <h2
-        className={`${spicyRice.className} text-6xl uppercase text-vintage-orange text-center`}
-      >
+      <h2 className='font-spicy text-6xl uppercase text-vintage-orange text-center'>
         Após o sinal, deixe sua mensagem!
       </h2>
       <div className='w-full'>
@@ -22,23 +19,17 @@ export function About() {
           />
         </div>
         <div className='w-full flex flex-col gap-10 bg-white px-11 py-16 rounded-b-3xl border-b-2 border-x-2 border-neutral-900'>
-          <p
-            className={`${inter.className} text-xl text-neutral-900 text-center tracking-[1px]`}
-          >
+          <p className='font-inter text-xl text-neutral-900 text-center tracking-[1px]'>
             De maneira descontraída e envolvente, proporcionamos aos seus
             convidados a oportunidade de gravar mensagens de áudio, relembrando
             a nostalgia das máquinas de gravação antigas.
           </p>
-          <p
-            className={`${inter.className} text-xl text-neutral-900 text-center tracking-[1px]`}
-          >
+          <p className='font-inter text-xl text-neutral-900 text-center tracking-[1px]'>
             Das emoções da mãe ao sábio conselho do vovô, da alegria radiante da
             prima ao entusiasmo do padrinho bêbado, cada palavra capturada pode
             conter uma história memorável.
           </p>
-          <p
-            className={`${inter.className} text-xl text-neutral-900 text-center tracking-[1px]`}
-          >
+          <p className='font-inter text-xl text-neutral-900 text-center tracking-[1px]'>
             À medida que o tempo passa, essas preciosas mensagens de áudio se
             assemelham a folhear um álbum de casamento, ganhando ainda mais
             valor e significado.
